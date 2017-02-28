@@ -15,10 +15,11 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_PY
 make 
 make install
 ```
-# Set environmental variables
+# update ldconfig path with new opencv2
 ```
 touch /etc/ld.so.conf.d/opencv.conf
 echo /usr/local/lib >> /etc/ld.so.conf.d/opencv.conf
+ldconfig
 ```
 ```
 dnf install -y tesseract xdotool wmctrl redhat-lsb

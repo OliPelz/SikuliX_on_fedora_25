@@ -21,6 +21,7 @@ touch /etc/ld.so.conf.d/opencv.conf
 echo /usr/local/lib >> /etc/ld.so.conf.d/opencv.conf
 ldconfig
 ```
+# further dependencies needed for SikuliX 1.1.0
 ```
 dnf install -y tesseract xdotool wmctrl redhat-lsb
 ```

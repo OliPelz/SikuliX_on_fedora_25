@@ -11,7 +11,7 @@ unzip opencv-2.4.13.zip
 cd opencv-2.4.13
 mkdir release
 cd release
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_PYTHON_SUPPORT=ON ..
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_PYTHON_SUPPORT=ON -DENABLE_PRECOMPILED_HEADERS=OFF..
 make 
 make install
 ```
